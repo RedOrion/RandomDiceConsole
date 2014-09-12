@@ -1,9 +1,10 @@
-﻿Module Module1
+Module Module1
 
 
     Sub Main()
         RandomizeSixSidedDie()
         RandomizeZeroAndOneHundred()
+        RandomizeEighteenSidedDie()
         Console.ReadKey()
     End Sub
 
@@ -12,6 +13,13 @@
         Console.WriteLine("Six Sided Die")
         Console.WriteLine(sixsideddie)
     End Sub
+
+    Sub RandomizeEighteenSidedDie()
+        Dim eighteensideddie As Integer = CInt(Int((18 * Rnd()) + 1))
+        Console.WriteLine("Eighteen Sided Die")
+        Console.WriteLine(eighteensideddie)
+    End Sub
+
     
     Sub RandomizeZeroAndOneHundred()
         Dim lowerbound As Integer = 0
