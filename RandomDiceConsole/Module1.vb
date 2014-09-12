@@ -9,6 +9,7 @@ Module Module1
     End Sub
 
     Sub RandomizeSixSidedDie()
+        Randomize()
         Dim sixsideddie As Integer = CInt(Int((6 * Rnd()) + 1))
         Console.WriteLine("Six Sided Die")
         Console.WriteLine(sixsideddie)
